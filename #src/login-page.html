@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html',{
+"title":"Exact Flow"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="hero-section" style="background-image: url(img/login-bg.svg);">
+				<div class="header-wrapper">
+					<div class="container">
+						@@include('components/_header.html',{})
+					</div>
+				</div>
+                <div class="container">
+                    <div class="login-form-wrapper">
+                        <div class="login-form-content">
+                            <div class="logo-wrapp">
+                                <img src="img/logo.svg" alt="logo">
+                            </div>
+                            <div class="login-title">
+                                <h3>Log In</h3>
+                            </div>
+                            <div class="login-subtitle">
+                                <p>Welcome back, we’ve missed you!</p>
+                            </div>
+                            <div class="email-wrapper">
+                                <input class="email" type="email" placeholder="Your Email">
+                                <img src="img/email.svg" alt="" class="email-ico">
+                            </div>
+                            <div class="password-wrapper">
+                                <input class="password" type="password" placeholder="Password">
+                                <img src="img/password.svg" alt="" class="password-ico">
+                            </div>
+                            <div class="form-subtitle-wrapper">
+                                <div class="check-div">
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" checked="checked" class="checkbox">
+                                        <span class="fake"><img src="img/check.svg" alt="check" class="check"></span>
+                                        <span class="remeber-text">Remember Me</span>
+                                    </label>
+                                </div>
+                                <div class="forgot-ref">
+                                    <a href="">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="sign-button">
+                                <a href="#">Sign In</a>
+                            </div>
+                            <div class="signup-ref">
+                                <p>Don't have an account yet? <a href="#test-modal" class="popup-modal">Sign Up</a></p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div id="test-modal" class="mfp-hide">
+							
+                    <div class="modal-input-wrapper">
+                        <div class="popup-ico">
+                            <img src="img/popup-ico1.svg" alt="">
+                        </div>
+                        <h2 class="modal-title">We’re here to help!</h2>
+                        <div class="modal-input-grid">
+                            <input type="name" placeholder="First Name*">
+                            <input type="name" placeholder="Last Name*">
+                            <input type="email" placeholder="Work Email*">
+                            <input type="text" placeholder="Company Name*">
+                        </div>
+                        <div class="modal-input-phone">
+                            <input type="number" placeholder="Phone Number">
+                        </div>
+                        <div class="modal-input-text">
+                            <textarea name="" id="" cols="30" rows="15" placeholder="How can we help you :"></textarea>
+                        </div>
+                        <div class="send-button-wrap">
+                            <a href="#" class="send-button">Send message</a>
+                        </div>
+                    </div>
+                    <p><a class="popup-modal-dismiss close" href="#"></a></p>
+                </div>
+	</div>
+	</section>
+	</main>
+	@@include('components/_footer.html',{})
+	</div>
+</body>
+
+</html>
